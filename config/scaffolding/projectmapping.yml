@@ -23,6 +23,8 @@ runtimes:
     uid: fl652ef8b934ef47b88f06ae2415908333
     stepId: a3
     reference: project.kvv_3003_feddev.integrations:tppdaf
+- runtimeAlias: kvv_3003_FedDev
+  assets:
   - name: ertWorkflow
     type: workflow
     uid: fl20c06446bd23450caba28e937391713f
