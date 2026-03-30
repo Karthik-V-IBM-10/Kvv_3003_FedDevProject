@@ -47,6 +47,12 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 - name: SIQA_TimeoutTest
+  version: "1.0"
+  gitServerName: kvv
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+- name: SIQAJDBCAdapterTests
   gitServerName: kvv
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Karthik-V-IBM-10
@@ -66,25 +72,7 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-  - name: WmSalesforceRESTProvider
-    version: 12.0.0.0.11
-- serviceName: project.kvv_3003_feddev.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.connections:restAcc
-  packages:
-  - name: Kvv_3003_FedDevProject
-    version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
-  - name: JMS2waySSL
-    version: "1.0"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: JMSTest
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -106,6 +94,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -113,6 +103,36 @@ services:
   - name: WmSalesforceRESTProvider
     version: 12.0.0.0.11
 - serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 12.0.0.0.774
+- serviceName: project.kvv_3003_feddev.integrations:Copy_tppdaf
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: pub.math:addInts
   packages:
   - name: WmPublic
     version: 12.0.0.0.774
@@ -129,6 +149,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -158,6 +180,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -181,6 +205,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -236,16 +262,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 12.0.0.0.11
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 12.0.0.0.774
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
@@ -263,6 +287,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -283,6 +309,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -316,6 +344,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -335,6 +365,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -364,6 +396,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -383,6 +417,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -404,6 +440,8 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -423,6 +461,8 @@ services:
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
+    version: "1.0"
+  - name: SIQA_TimeoutTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -444,16 +484,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQA_TimeoutTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 12.0.0.0.11
-- serviceName: services:add3Ints
-  packages:
-  - name: TPP_services_in_FCS
-    version: "1.0"
 configurationVariables:
   jdbc.Embedded-Database-Pool.waitingThread: "0"
   ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.idleTimeout
