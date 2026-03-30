@@ -16,17 +16,18 @@
     <value name="JMS2waySSL">1.0</value>
     <value name="JMSTest">1.0</value>
     <value name="SSL_JDBC_Test">1.0</value>
+    <value name="WmSalesforceRESTProvider">12.0.0.0.11</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">43</value>
+  <value name="build">44</value>
   <null name="description"/>
   <value name="created_date">30-03-2026 14:12:41 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-03-30T14:45:09.902272738Z</value>
+  <value name="lastUpdated">2026-03-30T14:46:41.684789874Z</value>
   <value name="wmProjectId">fl10f342404a1a41778592861963d95503</value>
   <value name="creator">Karthik V</value>
 </Values>
