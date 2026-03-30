@@ -37,6 +37,11 @@ runtimes:
     type: flow
     stepId: /0
     reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
+  - name: restTest
+    type: REST
+    path: /drt
+    action: POST
+    reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.services:add3Ints
 - runtimeAlias: kvv_3003_FedDev
   assets:
   - name: ertWorkflow
