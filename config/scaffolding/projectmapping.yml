@@ -42,6 +42,11 @@ runtimes:
     path: /drt
     action: POST
     reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.services:add3Ints
+  - name: restTest
+    type: REST
+    path: /dafdrt
+    action: POST
+    reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.project.kvv_3003_feddev.integrations:Sum
 - runtimeAlias: kvv_3003_FedDev
   assets:
   - name: ertWorkflow
