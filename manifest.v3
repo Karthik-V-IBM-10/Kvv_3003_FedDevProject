@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Values version="2.0">
-  <value name="enabled">no</value>
+  <value name="enabled">yes</value>
   <value name="lazy_load">yes</value>
   <value name="system_package">no</value>
   <value name="version">1.0</value>
@@ -22,13 +22,13 @@
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">54</value>
+  <value name="build">55</value>
   <null name="description"/>
   <value name="created_date">30-03-2026 14:12:41 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-03-30T15:08:13.802807652Z</value>
+  <value name="lastUpdated">2026-03-30T15:09:13.820400408Z</value>
   <value name="wmProjectId">fl10f342404a1a41778592861963d95503</value>
   <value name="creator">Karthik V</value>
 </Values>
