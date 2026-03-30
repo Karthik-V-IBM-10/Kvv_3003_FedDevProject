@@ -19,16 +19,24 @@ packages:
   wpmRegistry: licensed
   wpmVersion: latest
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: JMS2waySSL
+  gitServerName: kvv
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
-- serviceName: project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:MSSQL
+- serviceName: project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
   packages:
   - name: Kvv_3003_FedDevProject
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -39,6 +47,8 @@ services:
   - name: Kvv_3003_FedDevProject
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -54,6 +64,8 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -66,11 +78,25 @@ services:
   packages:
   - name: WmPublic
     version: 12.0.0.0.774
+- serviceName: project.kvv_3003_feddev.integrations:db
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_3003_feddev.integrations:deepclonetest
   packages:
   - name: Kvv_3003_FedDevProject
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -88,11 +114,69 @@ services:
   packages:
   - name: WmPublic
     version: 12.0.0.0.774
+- serviceName: project.kvv_3003_feddev.integrations:doUntilDADA
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_3003_feddev.integrations:gvtest
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: GB_1:readGlobalvariable
+  packages:
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: pub.globalVariable:getGlobalVariable
+  packages:
+  - name: WmPublic
+    version: 12.0.0.0.774
+- serviceName: project.kvv_3003_feddev.integrations:ifElseDADA
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_3003_feddev.integrations:switchCaseDADA
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_3003_feddev.integrations:tppdaf
   packages:
   - name: Kvv_3003_FedDevProject
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
