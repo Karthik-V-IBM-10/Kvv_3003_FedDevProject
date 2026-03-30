@@ -23,3 +23,23 @@ runtimes:
     uid: fl652ef8b934ef47b88f06ae2415908333
     stepId: a3
     reference: project.kvv_3003_feddev.integrations:tppdaf
+  - name: ertWorkflow
+    type: workflow
+    uid: fl20c06446bd23450caba28e937391713f
+    stepId: a0
+    reference: project.kvv_3003_feddev.integrations:Sum
+  - name: ertWorkflow
+    type: workflow
+    uid: fl20c06446bd23450caba28e937391713f
+    stepId: a1
+    reference: services:add3Ints
+  - name: ertWorkflow
+    type: workflow
+    uid: fl20c06446bd23450caba28e937391713f
+    stepId: a2
+    reference: project.kvv_3003_feddev.integrations:deepclonetest
+  - name: ertWorkflow
+    type: workflow
+    uid: fl20c06446bd23450caba28e937391713f
+    stepId: a3
+    reference: project.kvv_3003_feddev.integrations:tppdaf
