@@ -18,6 +18,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
   wpmVersion: latest
+- name: DADA_GlobalVariable1
+  gitServerName: kvv
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:MSSQL
   packages:
@@ -99,10 +104,18 @@ services:
     version: "1.0"
 configurationVariables:
   jdbc.Embedded-Database-Pool.waitingThread: "0"
+  jdbcfunc.ISDashboardStats.failFastMode: false
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  jdbc.Embedded-Database-Pool.spyenabled: "false"
   jdbcfunc.Xref.failFastMode: true
   jdbcfunc.ISDashboardStats.connPoolAlias: Embedded-Database-Pool
-  jdbcfunc.Xref.connPoolAlias: Embedded-Database-Pool
   jdbc.Embedded-Database-Pool.userid: APP
+  jdbcfunc.Xref.connPoolAlias: Embedded-Database-Pool
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.networkProtocol
+  : tcp
   jdbcfunc.ISInternal.connPoolAlias: Embedded-Database-Pool
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.driverType
   : Progress® DataDirect®
@@ -115,17 +128,32 @@ configurationVariables:
   : "0"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.databaseName
   : SIQACloud
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
   jdbc.Embedded-Database-Pool.snoopenabled: "false"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.serverName
   : 9.60.195.99
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.password
   : "{AES}X4QCAWgjWkTdMQvFA5XaqGmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.keyStore
+  : ""
   jdbc.Embedded-Database-Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/Embedded-Database-Pool.log;ddtdbg.ProtocolTraceShowTime=true
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.dbType
+  : MSSQL
   jdbcfunc.ISInternal.failFastMode: true
   jdbc.Embedded-Database-Pool.maxConns: "10"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.startupBackoffSecs
   : "10"
   jdbc.Embedded-Database-Pool.expireTime: "60000"
+  jdbc.Embedded-Database-Pool.poolThreshold: "0"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.blockingTimeout
   : "1000"
   jdbc.Embedded-Database-Pool.useSSL: "false"
@@ -137,29 +165,6 @@ configurationVariables:
   jdbc.Embedded-Database-Pool.driverAlias: Embedded Database Driver
   jdbc.Embedded-Database-Pool.spyparms: SpyAttributes=(log=(file)logs/spy/Embedded-Database-Pool.log;logTName=yes;timestamp=yes)
   jdbc.Embedded-Database-Pool.dbURL: jdbc:derby:embedded;create=true
-  jdbcfunc.ISDashboardStats.failFastMode: false
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
-  jdbc.Embedded-Database-Pool.spyenabled: "false"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.portNumber
-  : "1433"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.keyStore
-  : ""
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.dbType
-  : MSSQL
-  jdbc.Embedded-Database-Pool.poolThreshold: "0"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.poolable
-  : "false"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.user
   : sa
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.poolIncrementSize
