@@ -33,6 +33,10 @@ runtimes:
     uid: fl6ca9b46090444407bf27b731be042de7
     stepId: a0
     reference: SIQA_TimeoutTest:delayfor180Sec
+  - name: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.integrations:tppfcs
+    type: flow
+    stepId: /0
+    reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
 - runtimeAlias: kvv_3003_FedDev
   assets:
   - name: ertWorkflow
@@ -65,3 +69,11 @@ runtimes:
     uid: fl6ca9b46090444407bf27b731be042de7
     stepId: a1
     reference: SIQA_TimeoutTest:delayfor180Sec
+  - name: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.integrations:tppfcs
+    type: flow
+    stepId: /1
+    reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
+  - name: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.integrations:tppfcs
+    type: flow
+    stepId: /2
+    reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.SIQAJDBCAdapterTests.adapterServices:getData
