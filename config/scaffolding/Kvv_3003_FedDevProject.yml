@@ -37,11 +37,13 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakaribm
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: WmSalesforceRESTProvider
+  version: 12.0.0.0.11
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 services:
@@ -55,12 +57,36 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
+- serviceName: project.kvv_3003_feddev.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.connections:restAcc
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.integrations:AlertsCRTandERT
   packages:
   - name: Kvv_3003_FedDevProject
@@ -71,12 +97,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -91,12 +121,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: publisher:publisher
   packages:
   - name: JMSTest
@@ -115,16 +149,74 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: jms2wayssl_publisher:jms2wayssl_publisher
   packages:
   - name: JMS2waySSL
     version: "1.0"
+- serviceName: project.kvv_3003_feddev.integrations:SSl_JDBC_Test
+  packages:
+  - name: Kvv_3003_FedDevProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
+- serviceName: SSL_JDBC_Test.services:getSSLandCloseConn
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.art.transaction:startTransaction
+  packages:
+  - name: WmART
+    version: 12.0.0.0.191
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: SSL_JDBC_Test.services:get_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.art.transaction:commitTransaction
+  packages:
+  - name: WmART
+    version: 12.0.0.0.191
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.art.connection:disableConnection
+  packages:
+  - name: WmART
+    version: 12.0.0.0.191
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_3003_feddev.integrations:Sum
   packages:
   - name: Kvv_3003_FedDevProject
@@ -135,12 +227,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: pub.math:addInts
   packages:
   - name: WmPublic
@@ -159,12 +255,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.integrations:deepclonetest
   packages:
   - name: Kvv_3003_FedDevProject
@@ -175,12 +275,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -203,12 +307,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.integrations:gvtest
   packages:
   - name: Kvv_3003_FedDevProject
@@ -219,12 +327,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: GB_1:readGlobalvariable
   packages:
   - name: DADA_GlobalVariable1
@@ -243,12 +355,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.integrations:refdaf
   packages:
   - name: Kvv_3003_FedDevProject
@@ -259,12 +375,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.referencedata:ref1
   packages:
   - name: Kvv_3003_FedDevProject
@@ -275,12 +395,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.integrations:switchCaseDADA
   packages:
   - name: Kvv_3003_FedDevProject
@@ -291,12 +415,16 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: project.kvv_3003_feddev.integrations:tppdaf
   packages:
   - name: Kvv_3003_FedDevProject
@@ -307,80 +435,162 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.11
 - serviceName: services:add3Ints
   packages:
   - name: TPP_services_in_FCS
     version: "1.0"
 configurationVariables:
   jdbc.Embedded-Database-Pool.waitingThread: "0"
-  jdbcfunc.ISDashboardStats.failFastMode: false
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
-  jdbc.Embedded-Database-Pool.spyenabled: "false"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.refreshAccessToken
+  : "true"
   jdbcfunc.Xref.failFastMode: true
-  jdbcfunc.ISDashboardStats.connPoolAlias: Embedded-Database-Pool
-  jdbc.Embedded-Database-Pool.userid: APP
   jdbcfunc.Xref.connPoolAlias: Embedded-Database-Pool
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.networkProtocol
-  : tcp
+  jdbc.Embedded-Database-Pool.userid: APP
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
   jdbcfunc.ISInternal.connPoolAlias: Embedded-Database-Pool
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.trustStore
-  : ""
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.retryCount
+  : "4"
   jdbc.Embedded-Database-Pool.password: "{AES}Zcw2EXTJgNDVmVzJO2Y3Bw=="
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.databaseName
-  : SIQACloud
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
-  jdbc.Embedded-Database-Pool.snoopenabled: "false"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.expireTimeout
+  : "1000"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.serverName
   : 9.60.195.99
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.password
-  : "{AES}X4QCAWgjWkTdMQvFA5XaqGmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.providerUrl
+  : https://d0o000001qr6keac-dev-ed.my.salesforce.com
+  jdbc.Embedded-Database-Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/Embedded-Database-Pool.log;ddtdbg.ProtocolTraceShowTime=true
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cx.grant_type
+  : refresh_token
+  jdbc.Embedded-Database-Pool.maxConns: "10"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.connectTimeout
+  : "30000"
+  jdbc.Embedded-Database-Pool.expireTime: "60000"
+  jdbc.Embedded-Database-Pool.useSSL: "false"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionEnabled
+  : "false"
+  jdbc.Embedded-Database-Pool.driverAlias: Embedded Database Driver
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth.accessToken
+  : "{AES}bzO+KX5xKoE0CKrgiYZryJcjrxrt7HaM5972en7kZK9SYyS42n6ldW5j/rG7lC2wMUXCKBFvxvnkOBenvrq9ixQAEinqPrEaOxmwaF7Bpolfpn/3YJoMYdyrBIK7WSkuYfRpq04bdGvWTG5R62N0rGmK1wuN3U1rA1B0VhuZoUw="
+  jdbc.Embedded-Database-Pool.spyparms: SpyAttributes=(log=(file)logs/spy/Embedded-Database-Pool.log;logTName=yes;timestamp=yes)
+  jdbc.Embedded-Database-Pool.dbURL: jdbc:derby:embedded;create=true
+  jdbcfunc.ISDashboardStats.failFastMode: false
+  jdbc.Embedded-Database-Pool.spyenabled: "false"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth.consumerId
+  : 3MVG9pe2TCoA1Pf6F9PMP1LEDsuYm6pfL6T8OD7YSQUQsx36uZNIjUH3BCzBZ8lgStKaUEITogkQ7hNByxJjv
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.sockBuffSize
+  : "8192"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.portNumber
   : "1433"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.maximumPoolSize
-  : "10"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.keyStore
   : ""
-  jdbc.Embedded-Database-Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/Embedded-Database-Pool.log;ddtdbg.ProtocolTraceShowTime=true
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.dbType
-  : MSSQL
-  jdbcfunc.ISInternal.failFastMode: true
-  jdbc.Embedded-Database-Pool.maxConns: "10"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  jdbc.Embedded-Database-Pool.expireTime: "60000"
   jdbc.Embedded-Database-Pool.poolThreshold: "0"
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.poolable
   : "false"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.blockingTimeout
-  : "1000"
-  jdbc.Embedded-Database-Pool.useSSL: "false"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.expireTimeout
-  : "1000"
-  jdbc.Embedded-Database-Pool.minConns: "0"
-  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionEnabled
-  : "false"
-  jdbc.Embedded-Database-Pool.driverAlias: Embedded Database Driver
-  jdbc.Embedded-Database-Pool.spyparms: SpyAttributes=(log=(file)logs/spy/Embedded-Database-Pool.log;logTName=yes;timestamp=yes)
-  jdbc.Embedded-Database-Pool.dbURL: jdbc:derby:embedded;create=true
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth.consumerSecret
+  : "{AES}8bc8/WHaL3dph5PtuD02009Twi827NgOvyLy8mkfF31b5gfhajCNPAG/2OxW9yx8fPwx12ONSDGw1NRjVAxIemmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.timeoutType
+  : auto
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.user
   : sa
   ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  jdbcfunc.ISDashboardStats.connPoolAlias: Embedded-Database-Pool
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.readTimeout
+  : "30000"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.trustStore
+  : ""
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.maximumPoolSize
+  : "10"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.enableSNI
+  : "true"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.databaseName
+  : SIQACloud
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.refreshToken
+  : "{AES}iVEYOEICT1x7P9RL3dwVv0pQv1IODTw0Qm0vrSHPR8I0XZ0/KrBE7WODHo6AzR160DOPwKqbb3oMTCKFQlnaQ/g7JkyMztfW0zwKJm6lvFZuzitVA0hSa8yUlxGm0evN"
+  jdbc.Embedded-Database-Pool.snoopenabled: "false"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.enableCompression
+  : "false"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.password
+  : "{AES}X4QCAWgjWkTdMQvFA5XaqGmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.scope
+  : offline_access api refresh_token
+  jdbcfunc.ISInternal.failFastMode: true
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.expireTimeout
+  : "1000"
+  jdbc.Embedded-Database-Pool.minConns: "0"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.retryIfRequestSentOk
+  : "true"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.validateAfterInactivity
+  : "1000"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.networkProtocol
+  : tcp
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.tcpNoDelay
+  : "false"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.poolable
+  : "true"
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? artConnection.Kvv_3003_FedDevProject.project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL.connectionSettings.dbType
+  : MSSQL
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..kvv_3003_feddev..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:restAcc.cn.socketLinger
+  : "-1"
