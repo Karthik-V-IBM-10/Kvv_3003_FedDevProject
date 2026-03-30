@@ -23,6 +23,11 @@ runtimes:
     uid: fl652ef8b934ef47b88f06ae2415908333
     stepId: a3
     reference: project.kvv_3003_feddev.integrations:tppdaf
+  - name: 5secWorkflow
+    type: workflow
+    uid: flcd200da93bf9468ba9a6ba5144085f9c
+    stepId: a0
+    reference: SIQA_TimeoutTest:delayfor5Sec
 - runtimeAlias: kvv_3003_FedDev
   assets:
   - name: ertWorkflow
@@ -45,3 +50,8 @@ runtimes:
     uid: fl20c06446bd23450caba28e937391713f
     stepId: a3
     reference: project.kvv_3003_feddev.integrations:tppdaf
+  - name: 5secWorkflow
+    type: workflow
+    uid: flcd200da93bf9468ba9a6ba5144085f9c
+    stepId: a1
+    reference: SIQA_TimeoutTest:delayfor5Sec
