@@ -82,3 +82,8 @@ runtimes:
     type: flow
     stepId: /2
     reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.SIQAJDBCAdapterTests.adapterServices:getData
+  - name: restTest
+    type: REST
+    path: /ert
+    action: POST
+    reference: fld_124597485_stage00.projects.fl10f342404a1a41778592861963d95503.WmPackageServiceProvider.services:add3Ints
