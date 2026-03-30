@@ -28,6 +28,11 @@ runtimes:
     uid: flcd200da93bf9468ba9a6ba5144085f9c
     stepId: a0
     reference: SIQA_TimeoutTest:delayfor5Sec
+  - name: 180secWorkflow
+    type: workflow
+    uid: fl6ca9b46090444407bf27b731be042de7
+    stepId: a0
+    reference: SIQA_TimeoutTest:delayfor180Sec
 - runtimeAlias: kvv_3003_FedDev
   assets:
   - name: ertWorkflow
@@ -55,3 +60,8 @@ runtimes:
     uid: flcd200da93bf9468ba9a6ba5144085f9c
     stepId: a1
     reference: SIQA_TimeoutTest:delayfor5Sec
+  - name: 180secWorkflow
+    type: workflow
+    uid: fl6ca9b46090444407bf27b731be042de7
+    stepId: a1
+    reference: SIQA_TimeoutTest:delayfor180Sec
