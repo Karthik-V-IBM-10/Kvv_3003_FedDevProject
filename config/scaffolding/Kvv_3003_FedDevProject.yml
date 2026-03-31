@@ -62,11 +62,6 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
-- name: DADA_GlobalVariableAssets
-  gitServerName: kvv
-  gitUrl: https://github.com/manoj-jannu-IBM
-  gitUsername: Karthik-V-IBM-10
-  gitBranch: main
 services:
 - serviceName: project.kvv_3003_feddev.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
   packages:
